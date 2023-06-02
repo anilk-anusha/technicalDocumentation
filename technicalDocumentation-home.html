@@ -91,17 +91,22 @@
                     Try the following as well:
                 </p>
                 <code>
-                    if (true) { var x = 5; } console.log(x); // 5
+                    if (condition_1) { statement_1; } else if (condition_2) {
+                        statement_2; } else if (condition_n) { statement_n; } else {
+                        statement_last; }
                 </code>
                 <code>
-                    if (true) { let y = 5; } console.log(y); // ReferenceError: y is not defined
+                    if (condition) { statement_1_runs_if_condition_is_true;
+                        statement_2_runs_if_condition_is_true; } else {
+                        statement_3_runs_if_condition_is_false;
+                        statement_4_runs_if_condition_is_false; }
                 </code>
                 <code>
                     const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
                     "otherValue";
                 </code>
                 <code>
-
+                    if ((x = y)) { /* statements here */ }
                 </code>
             </article>
         </section>
